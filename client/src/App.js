@@ -1,14 +1,21 @@
+import React from 'react';
+import {
+  Route,
+  BrowserRouter as Router,
+  Routes,
+} from "react-router-dom";
+import Home from './Home';
+import Player from './Player';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className='App-header'>
-        <video controls muted src="http://localhost:4000/video" type='video/mp4'>
-
-        </video>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path="/" component={Home}></Route>
+        <Route path="/player/:id" component={Player}></Route>
+      </Routes>
+    </Router>
   );
 }
 
