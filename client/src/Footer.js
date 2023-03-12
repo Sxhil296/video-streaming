@@ -3,7 +3,7 @@ import React from 'react';
 function Footer() {
   return (
     <footer>
-      &copy; 2023, uPlay. All rights reserved.
+      &copy; 2023, uStream. All rights reserved.
     </footer>
   );
 }
