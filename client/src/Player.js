@@ -9,7 +9,7 @@ export default class Player extends Component {
     constructor(props) {
       super(props);
       this.state = {
-        videoId: this.props.match.params.id,
+        videoId: this.props.id ,
         videoData: {}
       };
     }
